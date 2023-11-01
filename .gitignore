@@ -1,0 +1,48 @@
+# Arquivos de configuração específicos do Visual Studio Code
+.vscode/
+
+# Arquivos gerados automaticamente
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyo
+*.pyc
+*.pyo
+
+# Arquivos de ambiente
+.env
+.venv
+
+# Dependências e diretórios de instalação
+venv/
+env/
+Lib/
+lib/
+bin/
+*.egg-info/
+*.egg/
+pip-log.txt
+
+# Logs e arquivos temporários
+*.log
+*.swp
+*~
+
+# Arquivos de dados ou saída
+*.csv
+*.xlsx
+*.pkl
+
+# Arquivos de configuração locais
+config.py
+
+# Arquivos de credenciais
+credentials.json
+
+# Arquivos gerados pelo Python
+*.pyproj
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
