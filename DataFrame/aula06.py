@@ -8,7 +8,7 @@ df_del_null = df_del.dropna()
 print(f"\n--- Deleting blank values through dropna ---\n")
 print(f"{df_del_null}")
 
-# 2° Delete the Data Venda column
+# 2° Delete the Data-Venda column
 df_del_null = df_del_null.drop(columns="Data Venda")
 df_del_null = df_del_null.drop(axis=0, index=7)
 print(f"\n--- Droping column 'Data Venda' throughout drop ---\n")
