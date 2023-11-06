@@ -9,7 +9,7 @@ print(f"\n{df}\n")
 df_nunique = df.nunique()
 print(f"\n{df_nunique}\n")
 
-# 2° - summarize which is unique value and what it's not.
+# 2° - summarize which is an unique value and what it's not.
 # using the method .duplicated(subset="Salesperson", keep="first")
 # keep control how we can consider the duplicated value =  first, last, False
 df_duplicated = df.duplicated(subset="Vendedor", keep="first")
@@ -21,4 +21,4 @@ print(f"\n{df}\n")
 
 # 4° - Remove duplicate values
 df_cleaned = df.drop(columns="Duplicated Values").drop_duplicates(subset="Vendedor", keep="first")
-print(f"\n{df_cleaned}\n")
+print(f"\nData frame cleaned: \n{df_cleaned}\n")
