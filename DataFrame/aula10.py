@@ -1,4 +1,4 @@
-# Merge on dataframes
+# Concat dataframes
 import pandas as pd
 
 sales_jan = pd.read_excel("Vendas_Jan.xlsx")
