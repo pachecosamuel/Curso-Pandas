@@ -11,11 +11,10 @@ print(f"\n Sales:\n {sales} \n")
 # We gonna lookup for salesperson which made sales on the xlsx
 
 # The left join will bring all content from the first table
-# and brinb only the match data from the second table
+# and will only catch the match data from the second table
 
 # 1° Left
 merged = pd.merge(sales, salesperson, on="Id Vendedor", how="left")
-print(f"\n Left JOIN:\n {merged} \n")
 print(f"\n Left JOIN:\n {merged} \n")
 
 # 2° Rename columns
