@@ -1,7 +1,6 @@
 # MERGE Outer join
-# O merge do tipo outer join combina os elementos de duas tabelas, incluindo todas as linhas de ambas as tabelas, 
+# O merge do tipo outer join combina os elementos de duas tabelas, incluindo todas as linhas e colunas de ambas as tabelas, 
 # e preenchendo os valores ausentes com NaN (Not a Number) onde não houver correspondência entre as chaves de junção.
-
 import pandas as pd
 
 # 1° Generate two dataframes

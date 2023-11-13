@@ -2,8 +2,8 @@
 import pandas as pd
 
 #Group by = Agroup by a specified column
-#dropna = delete rows which have at least one null value
-#by = using a specified column as discretion(critério) to make the group by
+#dropna = delete rows which have at least one null/NaN value
+#by = It uses a specified column as discretion(critério) to make the group by
 
 dtype_dict = {
     "Vendedor": str,
@@ -31,7 +31,7 @@ print(f"\n Sum DF:\n {sum_salesp}\n")
 
 # 3° Make the groupby using the sum and maintain the NaN rows
 sum_nan_sales = salesDF.groupby(by=["Vendedor"], dropna=False).sum()
-print(f"\n Sum DF:\n {sum_nan_sales}\n")
+print(f"\n Sum DF with dropna=False:\n {sum_nan_sales}\n")
 
 # 4° Make the groupby using the sum and REMOVING the NaN rows
 sum_sales = salesDF.groupby(by=["Vendedor"], dropna=True).sum()
@@ -39,4 +39,5 @@ print(f"\n Sum NaN DF:\n {sum_sales}\n")
 
 # 5° Make groupby using the columns vendedor and product . sum()
 salesDF2 = salesDF2.drop(columns="Data Venda").groupby(["Produto", "Vendedor"]).sum()
+# salesDF2 = salesDF2.groupby(["Data Venda", "Produto"]).sum()
 print(f"\n {salesDF2} \n")
